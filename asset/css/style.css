@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    list-style: none;
 	text-decoration: none;
 }
 
@@ -29,34 +30,78 @@ time, mark, audio, video {
     background-color: rgb(0, 0, 0);
 }
 
+a {
+    color: #fff;
+    font-size: 1em;
+    transition: all .2s ease;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+a:hover {
+    color: #762986;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    background: none;
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.navbar .links {
+    display: none;
+    gap: 1.5em;
+}
+
+.navbar .burger-menu-button {
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    display: block;
+}
+
 #title > h1, h2 {
     font-family: "Italiana", serif;
     text-align: center;
     color: #fff;
-    padding: 0.5em;
 }
 
 #title > h1 {
-    font-size: 2.2em;
+    font-size: 3em;
     letter-spacing: 0.09em;
+    background-image: linear-gradient(to right, #e4e4e4 0%, #762986 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #title > h2 {
-    font-size: 1.2em;
+    font-size: 1.7em;
     margin-bottom: 1em;
+    background-image: linear-gradient(to right, #e4e4e4 0%, #762986 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bandeau {
     width: 100%;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
-    
 }
 
 #head > figure > img {
     width: 100%;
     display: block;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .page {
@@ -68,18 +113,34 @@ time, mark, audio, video {
     background-color: #1A1A1A;
 }
 
+.bg-light-grey {
+    background-color: #222222;
+}
+
 .entete-page {
     font-family: "Julius Sans One", sans-serif;
     padding: 0.5em;
 }
 
 .limit-size {
-    width: 7em;
+    margin-top: 2em;
+    width: 50%;
+}
+
+.limit-size2 {
+    margin-top: 1em;
+    width: 50%;
 }
 
 .bg-purple {
     border: 1px solid;
     color: #762986;
+}
+
+.bg-france {
+    border: 1px solid #222222;
+    height: 3px;
+    background: linear-gradient(to right, #1D20DF 0%, #fff 50%, #e13030 100%);
 }
 
 .container {
@@ -95,21 +156,47 @@ time, mark, audio, video {
 .article {
     width: 200px;
     height: auto;
-    padding: 2.5em 0;
+    padding: 2em 0;
 }
 
-.h3 {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 1em;
-    color: #fff;
-    padding-top: 0.5em;
+.shadow {
+    width: 100%;
+    box-shadow: 2px 3px 15px #762986;
 }
 
-.p {
-    font-family: "Italiana", serif;
-    font-size: 0.8em;
-    color: #fff;
-    margin-bottom: 2em;
+.image-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.image-hover img {
+    display: block;
+}
+
+.image-hover .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1.2em;
+}
+
+.image-hover:hover .hover-text {
+    opacity: 1;
+}
+
+.blur {
+    transition: all .2s ease;
+}
+
+.blur:hover {
+    filter: blur(3px);
 }
 
 article > figure {
@@ -120,4 +207,219 @@ article > figure {
 article > figure > img {
     display: block;
     width: 100%;
+}
+
+.button {
+    font-size: 0.7em;
+    display: block;
+    height: 1em;
+    line-height: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    font-family: "Julius Sans One", sans-serif;
+    color: #fff;
+    background-color: #393939;
+    border: 4px solid #762986;
+    border-radius: 0.5em;
+}
+
+/*---------- CLASSES TEXTES -------------*/
+
+.h2 {
+    font-size: 1.5em;
+    margin: 0.5em;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.h3 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 0.5em 0;
+}
+
+.p {
+    font-family: "Italiana", serif;
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.span {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.span2 {
+    padding: 2em;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/*-----------CONNECTION---------------*/
+
+.login-container {
+    background-color: #393939;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #762986;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #762986;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #5b2167;
+}
+
+/*-----------FORMULAIRE---------------*/
+
+.form-container {
+    background-color: #393939;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #762986;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #5b2167;
+}
+
+/*---------- BURGER MENU -------------*/
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    width: 200px;
+    background: #737373;
+    opacity: 90%;
+    border-radius: 5px;
+
+}
+
+.burger-menu li {
+    margin-top: 20px;
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu.open {
+    display: block;
+    height: 310px;
+}
+
+/*---------- RESPONSIVE -------------*/
+
+@media (min-width: 800px){
+    .navbar .links{
+        width: 100%;
+        background-color: #141414;
+        margin-bottom: 30px;
+        display: flex;
+        max-width: 1200px;
+        height: 60px;
+        margin: 100px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .navbar .burger-menu-button {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    h1 {
+        padding: 1em;
+    }
 }

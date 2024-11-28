@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmorama</title>
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div id="head">
+            <div class="navbar">
+                <ul class="links">
+                    <li class="upper"><a href="#">dernières sorties</a></li>
+                    <li class="upper"><a href="#">suivis</a></li>
+                    <li class="upper"><a href="#">se connecter</a></li>
+                    <li class="upper"><a href="#">contact</a></li>
+                </ul>
+                <div class="burger-menu-button">
+                    <i class="fa-solid fa-bars white"></i>
+                </div>
+            </div>
 
+            <div class="burger-menu">
+                <ul class="links">
+                    <li class="upper"><a href="#">dernières sorties</a></li>
+                    <hr class="bg-purple limit-size2">
+                    <li class="upper"><a href="#">suivis</a></li>
+                    <hr class="bg-purple limit-size2">
+                    <li class="upper"><a href="#">se connecter</a></li>
+                    <hr class="bg-purple limit-size2">
+                    <li class="upper"><a href="#">contact</a></li>
+                </ul>
+            </div>
+           
             <div id="title">
                 <h1>Filmorama</h1>
                 <h2>votre actu ciné/séries</h2>
@@ -25,47 +49,208 @@
     <main>
 
         <div class="page entete-page bg-grey">
-            <h2>LES SORTIES DE LA SEMAINE</h2>
+            <h2 class="h2 upper">les sorties de la semaine</h2>
             <hr class="bg-purple limit-size">
         </div>
 
         <section class="container bg-grey">
 
             <article class="article center">
-                <h3 class="h3">GLADIATOR II</h3>
+                <h3 class="h3 upper">gladiator ii</h3>
                 <p class="p">Ridley Scott</p>
-                <figure>
-                    <img src="./asset/img/gladiator2/affiche-officielle-film-gladiator-2.jpg" alt="poster gladiator 2">
+                <figure class="image-hover">
+                    <img src="./asset/img/gladiator2/affiche-officielle-film-gladiator-2.jpg" alt="poster gladiator 2" class="blur">
+                    <div class="hover-text">3,5/5</div>
                 </figure>
-                <a href="#" class="button">BANDE ANNONCE</a> <br>
-                <a href="#" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE TECHNIQUE</a>
             </article>
 
             <article class="article center">
-                <h3 class="h3">DEADPOOL 3</h3>
+                <h3 class="h3 upper">deadpool 3</h3>
                 <p class="p">Shawn Levy</p>
-                <figure>
-                    <img src="./asset/img/deadpool 3/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg" alt="poster gladiator 2">
+                <figure class="image-hover">
+                    <img src="./asset/img/deadpool 3/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg" alt="poster deadpool 3" class="blur">
+                    <div class="hover-text">3,6/5</div>
                 </figure>
-                <a href="#" class="button">BANDE ANNONCE</a> <br>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
                 <a href="#" class="button">VOIR LA FICHE DU FILM</a>
             </article>
 
             <article class="article center">
-                <h3 class="h3">LE ROBOT SAUVAGE</h3>
+                <h3 class="h3 upper span">le robot sauvage</h3>
                 <p class="p">Chris Sanders</p>
-                <figure>
-                    <img src="./asset/img/robot/7a1098f21c765b7d4935240e1af094ed.jpg" alt="poster gladiator 2">
+                <figure class="image-hover">
+                    <img src="./asset/img/robot/7a1098f21c765b7d4935240e1af094ed.jpg" alt="poster robot sauvage" class="blur">
+                    <div class="hover-text">4,4/5</div>
                 </figure>
-                <a href="#" class="button">BANDE ANNONCE</a> <br>
+                <a href="#" class="button">BANDE ANNONCE</a>
                 <a href="#" class="button">VOIR LA FICHE DU FILM</a>
             </article>
         </section>
+
+
+
+
+        <div class="page entete-page bg-light-grey">
+            <h2 class="h2 upper">la france à l'honneur</h2>
+            <hr class="bg-france limit-size">
+        </div>
+
+        <section class="container bg-light-grey">
+
+            <article class="article center">
+                <h3 class="h3 upper span">le comte de montecristo</h3>
+                <p class="p">Alexandre de la Patellière <br>Matthieu Delaporte</p> 
+                <figure class="image-hover">
+                    <img src="./asset/img/le comte/61BkIzhaf3L.jpg" alt="poster le comte de montecristo" class="blur">
+                    <div class="hover-text">4,5/5</div>
+                </figure>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE TECHNIQUE</a>
+            </article>
+
+            <article class="article center">
+                <h3 class="h3 upper span">monsieur aznavour</h3>
+                <p class="p">Grand Corps Malade <br>Mehdi Idir</p>
+                <figure class="image-hover">
+                    <img src="./asset/img/aznavour/aznavour.jpg" alt="poster monsieur aznavour" class="blur">
+                    <div class="hover-text">4,3/5</div>
+                </figure>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE DU FILM</a>
+            </article>
+        </section>
+
+
+        <div class="page entete-page bg-grey">
+            <h2 class="h2 upper">les séries du moment</h2>
+            <hr class="bg-purple limit-size">
+        </div>
+
+
+        <section class="container bg-grey">
+
+            <article class="article center">
+                <h3 class="h3">breaking bad</h3>
+                <p class="p">Vince Gillian</p>
+                <figure class="image-hover">
+                    <img src="./asset/img/séries/breaking bad/breaking-bad.jpg" alt="poster breaking bad" class="blur">
+                    <div class="hover-text">4,7/5</div>
+                </figure>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE TECHNIQUE</a>
+            </article>
+
+            <article class="article center">
+                <h3 class="h3 span">better call saul</h3>
+                <p class="p">Vince Gillian</p>
+                <figure class="image-hover">
+                    <img src="./asset/img/séries/better call saul/better-call-saul.jpg" alt="poster better call saul" class="blur">
+                    <div class="hover-text">4,4/5</div>
+                </figure>
+                <a href="#" class="button">VOIR LA BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE DU FILM</a>
+            </article>
+
+            <article class="article center">
+                <h3 class="h3 span">game of throne</h3>
+                <p class="p">David Benioff</p>
+                <figure class="image-hover">
+                    <img src="./asset/img/séries/got/GOT.jpg" alt="poster game of throne" class="blur">
+                    <div class="hover-text">4,6/5</div>
+                </figure>
+                <a href="#" class="button">BANDE ANNONCE</a>
+                <a href="#" class="button">VOIR LA FICHE DU FILM</a>
+            </article>
+        </section>
+
+
+
+        <div class="page entete-page bg-light-grey">
+            <h2 class="h2 upper">suivis</h2>
+            <hr class="bg-purple limit-size">
+            <h3 class="h3 upper center">mes séries / films suivis</h3>
+        </div>
+
+        <section class="container bg-light-grey">
+
+            <article class="article center">
+                <img src="./asset/img/deadpool 3/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg" alt="poster deadpool 3" class="shadow">
+                <h3 class="h3 upper">deadpool 3</h3>
+            </article>
+
+            <article class="article center">
+                <img src="./asset/img/séries/breaking bad/breaking-bad.jpg" alt="poster breaking bad" class="shadow">
+                <h3 class="h3 upper">breaking bad</h3>
+            </article>
+
+            <h3 class="h3 upper center span2">mes avis: </h3>
+
+            <p class="p span">Prison Break - "j'aime bien" - 4,5 / 5</p>
+            <p class="p span">Scarface - "Tony le GOAT" - 5 / 5</p>
+            <p class="p span">H.E.A.T - "Grand clasique" - 4,3 / 5</p>
+            <p class="p span">Taxi Driver - "bien guez" - 2 / 5</p>
+
+            <h3 class="h3 upper center">vous pourriez aimer aussi: </h3>
+
+            <article class="article center">
+                <img src="./asset/img/jsp/51tjFmNBV+L.jpg" alt="poster le loup de wallstreet" class="shadow">
+                <h3 class="h3 upper">le loup de wall street</h3>
+            </article>
+        </section>
+
+        <section>
+        <div class="login-container">
+            <h1>Connexion</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </section>
+
+
+        <section class="container bg-grey">
+            <div class="form-container">
+                <h1>Contactez-nous</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
 
     </footer>
     
+    <script src="./asset/js/main.js">
+
+    </script>
 </body>
 </html>
