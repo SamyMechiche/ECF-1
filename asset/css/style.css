@@ -146,6 +146,7 @@ header {
 .container {
     display: flex;
     flex-direction: column;
+    margin-top: -20px;
 }
 
 .center {
@@ -245,6 +246,13 @@ article > figure > img {
     margin-bottom: 2em;
 }
 
+.p2 {
+    font-family: "Italiana", serif;
+    font-size: 2em;
+    color: #fff;
+    padding: 1em;
+}
+
 .span {
     font-size: 1.5em;
     text-align: center;
@@ -258,15 +266,29 @@ article > figure > img {
     text-transform: uppercase;
 }
 
-/*-----------CONNECTION---------------*/
+.padding {
+    padding: 2em;
+}
+
+span {
+    color: #fff;
+    font-size: 2em;
+}
+
+.picto {
+    font-size: 2em;
+}
+
+/*-----------FORMULAIRE CONNEXION---------------*/
 
 .login-container {
     background-color: #393939;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.5em;
+    margin: 0 auto 50px auto;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -274,6 +296,7 @@ h1 {
     color: #762986;
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Julius Sans One", sans-serif;
 }
 
 .form-group {
@@ -283,17 +306,11 @@ h1 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #866f6f;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #222222;
-    color: #ffffff;
-    box-sizing: border-box;
+label {
+    font-family: "Italiana", serif;
 }
 
 button {
@@ -312,15 +329,15 @@ button:hover {
     background-color: #5b2167;
 }
 
-/*-----------FORMULAIRE---------------*/
+/*-----------FORMULAIRE CONTACT---------------*/
 
 .form-container {
     background-color: #393939;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 100%;
+    width: 70%;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -349,6 +366,10 @@ h1 {
     background-color: #222222;
     color: #ffffff;
     box-sizing: border-box;
+}
+
+label {
+    font-family: "Italiana", serif;
 }
 
 button {
