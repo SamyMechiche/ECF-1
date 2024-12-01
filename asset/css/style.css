@@ -125,6 +125,7 @@ header {
 .limit-size {
     margin-top: 2em;
     width: 50%;
+    max-width: 700px;
 }
 
 .limit-size2 {
@@ -133,12 +134,12 @@ header {
 }
 
 .bg-purple {
-    border: 1px solid;
+    border: 3px solid;
     color: #762986;
 }
 
 .bg-france {
-    border: 1px solid #222222;
+    border: 3px solid #222222;
     height: 3px;
     background: linear-gradient(to right, #1D20DF 0%, #fff 50%, #e13030 100%);
 }
@@ -208,6 +209,7 @@ article > figure {
 article > figure > img {
     display: block;
     width: 100%;
+    height: 300px;
 }
 
 .button {
@@ -278,6 +280,7 @@ span {
 .picto {
     font-size: 2em;
 }
+
 
 /*-----------FORMULAIRE CONNEXION---------------*/
 
@@ -418,6 +421,7 @@ button:hover {
 /*---------- RESPONSIVE -------------*/
 
 @media (min-width: 800px){
+
     .navbar .links{
         width: 100%;
         background-color: #141414;
@@ -443,4 +447,60 @@ button:hover {
     h1 {
         padding: 1em;
     }
-}
+
+    .h2 {
+        font-size: 2em;
+    }
+
+    .h3 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .article {
+        width: 300px;
+        height: auto;
+        padding: 2.2em;
+    }
+
+    article > figure > img {
+        display: block;
+        width: 100%;
+    }    
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .suivis {
+        display: flex;
+    }
+
+    #head-top {
+        display: flex;
+    }
+
+    .bandeau {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .bg-purple {
+        border: 3px solid;
+        color: #762986;
+    }
+    
+    .bg-france {
+        border: 3px solid #222222;
+        height: 3px;
+        background: linear-gradient(to right, #1D20DF 0%, #fff 50%, #e13030 100%);
+    }
+} 
+
