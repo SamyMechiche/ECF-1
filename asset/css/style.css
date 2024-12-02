@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: #762986;
+    color: #8e6996;
 }
 
 header {
@@ -119,13 +119,13 @@ header {
 
 .entete-page {
     font-family: "Julius Sans One", sans-serif;
-    padding: 0.5em;
+    padding: 0.5em 0;
 }
 
 .limit-size {
     margin-top: 2em;
     width: 50%;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 .limit-size2 {
@@ -444,8 +444,17 @@ button:hover {
         display: none;
     }
 
+    hr {
+        margin: 0 0 0 0.5em;
+    }
+
     h1 {
         padding: 1em;
+    }
+
+    h2 {
+        text-align: left;
+        margin-left: 50px;
     }
 
     .h2 {
@@ -456,13 +465,10 @@ button:hover {
         font-size: 1.7em;
     }
 
-    h2 {
-        text-align: left;
-        margin-left: 50px;
-    }
+
 
     .article {
-        width: 300px;
+        width: 500px;
         height: auto;
         padding: 2.2em;
     }
@@ -490,17 +496,34 @@ button:hover {
         width: 100%;
         height: 200px;
         overflow: hidden;
+
     }
 
     .bg-purple {
-        border: 3px solid;
+        border: 7px solid;
         color: #762986;
     }
     
     .bg-france {
-        border: 3px solid #222222;
-        height: 3px;
+        border: 7px solid #222222;
+        height: 7px;
         background: linear-gradient(to right, #1D20DF 0%, #fff 50%, #e13030 100%);
+    }
+
+    .button {
+        font-size: 0.7em;
+        display: block;
+        width: 250px;
+        height: 1em;
+        line-height: 1em;
+        padding: 1em;
+
+        margin: 1em auto 1em auto;
+        font-family: "Julius Sans One", sans-serif;
+        color: #fff;
+        background-color: #393939;
+        border: 4px solid #762986;
+        border-radius: 0.5em;
     }
 } 
 
