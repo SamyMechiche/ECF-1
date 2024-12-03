@@ -71,6 +71,52 @@ header {
     display: block;
 }
 
+/*---------------SOUS-MENU----------------*/
+
+.navbar > ul > li {
+    position: relative;
+}
+
+.navbar > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    border-top: 3px solid #762986;
+    top: 100%;
+    animation: fadein .2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:100%;
+    }
+}
+
+.navbar > ul > li:hover > ul {
+    display: block;
+}
+
+.navbar > ul > li > ul > li > a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-family: "Julius Sans One", sans-serif;
+    background-color: #FFF;
+    display: block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    transition: all .5s ease;
+}
+
+.navbar > ul > li > ul > li:hover > a {
+    background-color: #d1d1d1;
+    color: #762986;
+}
+
 #title > h1, h2 {
     font-family: "Italiana", serif;
     text-align: center;
@@ -148,6 +194,11 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: -20px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .center {
@@ -281,6 +332,47 @@ span {
     font-size: 2em;
 }
 
+/*-----------SLIDER----------------*/
+
+.slider {
+    background-color: #222222;
+    /* width: 100%; */
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow-left, .arrow-right {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: .5;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    transition: all .2s ease;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 1;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+.slides {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
 
 /*-----------FORMULAIRE CONNEXION---------------*/
 
@@ -340,6 +432,7 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 70%;
+    max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -420,7 +513,7 @@ button:hover {
 
 /*---------- RESPONSIVE -------------*/
 
-@media (min-width: 800px){
+@media (min-width: 1040px){
 
     .navbar .links{
         width: 100%;
@@ -434,6 +527,10 @@ button:hover {
         align-items: center;
         justify-content: space-between;
         justify-content: space-around;
+    }
+
+    .burger-menu.open {
+        display: none;
     }
 
     .navbar .burger-menu-button {
@@ -465,8 +562,6 @@ button:hover {
         font-size: 1.7em;
     }
 
-
-
     .article {
         width: 500px;
         height: auto;
@@ -482,6 +577,11 @@ button:hover {
         flex-direction: row;
         justify-content: space-around;
         justify-content: space-between;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: column;
     }
 
     .suivis {
@@ -526,4 +626,20 @@ button:hover {
         border-radius: 0.5em;
     }
 } 
+
+/* @media (min-width: 1070px){
+
+} */
+
+@media (min-width: 1400px){
+        article > figure {
+        width: 300px;
+        height: 450px
+    }
+
+    article > figure > img {
+        width: 100%;
+        height: 100%;
+    }
+}
 

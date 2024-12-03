@@ -59,7 +59,7 @@ span {
     color: #a25daf;
 }
 
-.robot {
+.fiche {
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -145,7 +145,7 @@ article > figure {
     width: 200px;
 }
 
-.robot > figure > img {
+.fiche > figure > img {
     display: block;
     width: 100%;
     height: 300px;
@@ -201,4 +201,157 @@ article > figure {
     .julius {
         font-size: 1.3em;
     }
+}
+
+@media (min-width: 1070px){
+
+    /*-----------TEXTE--------------*/
+
+    h1 {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 1.7em;
+        color: #fff;
+        padding: 0.3em;
+    }
+
+    h2 {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .julius {
+        font-size: 1.3em;
+    }
+
+    .italiana {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-family: "Italiana", serif;
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+    /*-----------CAST--------------*/
+
+    #cast > .article {
+        width: 250px;
+        height: 350px;
+    }
+
+    .article {
+        width: 350px;
+        height: 500px;
+        text-align: center;
+    }
+
+    .article > figure {
+        width: 100%;
+        height: 100%;
+    }
+
+    .article > figure > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .critic {
+        width: 80%;
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 5em auto;
+        font-size: 1.5em;
+    }
+
+    /*-----------FICHE--------------*/
+
+    article > h1, hr {
+        text-align: left;
+        margin: 0;
+    }
+
+    article > figure {
+        width: 400px;
+    }
+
+    .fiche > figure > img {
+        height: 600px;
+    }
+
+}
+
+@media (min-width: 1400px){
+
+    /*-----------TEXTE--------------*/
+
+    h1 {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 2em;
+        color: #fff;
+        padding: 0.7em;
+    }
+
+    h2 {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .julius {
+        font-size: 2em;
+    }
+
+    .italiana {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-family: "Italiana", serif;
+        width: 60%;
+        font-size: 2em;
+    }
+
+    /*-----------CAST--------------*/
+
+    .article {
+        width: 350px;
+        height: 500px;
+        text-align: center;
+    }
+
+    .article > figure {
+        width: 100%;
+        height: 100%;
+    }
+
+    .article > figure > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .critic {
+        width: 80%;
+        text-align: justify;
+        letter-spacing: 2px;
+        margin: 5em auto;
+        font-size: 2em;
+    }
+
+    /*-----------FICHE--------------*/
+
+    article > h1, hr {
+        text-align: left;
+        margin: 0;
+    }
+
+    article > figure {
+        width: 400px;
+    }
+
+    .fiche > figure > img {
+        height: 600px;
+    }
+
 }
