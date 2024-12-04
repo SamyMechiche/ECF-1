@@ -15,14 +15,14 @@
                 <ul class="links">
                     <li class="upper"><a href="#">dernières sorties</a>
                         <ul>
-                            <li><a href="#" class="upper julius white">les sorties de la semaine</a></li>
-                            <li><a href="#" class="upper julius white">la france à l'honneur</a></li>
-                            <li><a href="#" class="upper julius white">les séries du moment</a></li>
+                            <li><a href="#" class="upper julius white" id="desk-sorties">les sorties de la semaine</a></li>
+                            <li><a href="#" class="upper julius white" id="desk-france">la france à l'honneur</a></li>
+                            <li><a href="#" class="upper julius white" id="desk-series">les séries du moment</a></li>
                         </ul>
                     </li>
-                    <li class="upper"><a href="#">suivis</a></li>
-                    <li class="upper"><a href="#">se connecter</a></li>
-                    <li class="upper"><a href="#">contact</a></li>
+                    <li class="upper"><a href="#" id="desk-suivis">news et articles</a></li>
+                    <li class="upper"><a href="#" id="desk-connexion">se connecter</a></li>
+                    <li class="upper"><a href="#" id="desk-contact">contact</a></li>
                 </ul>
                 <div class="burger-menu-button">
                     <i class="fa-solid fa-bars white"></i>
@@ -31,13 +31,17 @@
 
             <div class="burger-menu">
                 <ul class="links">
-                    <li class="upper"><a href="#">dernières sorties</a></li>
+                    <li class="upper" id="dernieres-sorties"><a href="#">dernières sorties</a></li>
                     <hr class="bg-purple limit-size2">
-                    <li class="upper"><a href="#">suivis</a></li>
+                    <li class="upper" id="film-fr"><a href="#">films français</a></li>
                     <hr class="bg-purple limit-size2">
-                    <li class="upper"><a href="#">se connecter</a></li>
+                    <li class="upper" id="series-moment"><a href="#">séries du moment</a></li>
                     <hr class="bg-purple limit-size2">
-                    <li class="upper"><a href="#">contact</a></li>
+                    <li class="upper" id="suivis"><a href="#">news / articles</a></li>
+                    <hr class="bg-purple limit-size2">
+                    <li class="upper" id="connexion"><a href="#">se connecter</a></li>
+                    <hr class="bg-purple limit-size2">
+                    <li class="upper" id="contact"><a href="#">contact</a></li>
                 </ul>
             </div>
            <section id="head-top">
@@ -57,7 +61,7 @@
     <main>
 
         <div class="page entete-page bg-grey">
-            <h2 class="h2 upper">les sorties de la semaine</h2>
+            <h2 class="h2 upper" id="sorties-semaine">les sorties de la semaine</h2>
             <hr class="bg-purple limit-size">
         </div>
 
@@ -71,7 +75,7 @@
                     <div class="hover-text">3,5/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=APv2lidaDmo" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./fiche technique gladiator/fiche.html" class="button">VOIR LA FICHE TECHNIQUE</a>
+                <a href="./fiche technique gladiator/fiche.html" class="button" target="_blank">VOIR LA FICHE TECHNIQUE</a>
             </article>
 
             <article class="article center">
@@ -82,7 +86,7 @@
                     <div class="hover-text">3,6/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=AAWJ21wLN4A" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./fiche technique deadpool/fiche.html" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="./fiche technique deadpool/fiche.html" class="button" target="_blank">VOIR LA FICHE DU FILM</a>
             </article>
 
             <article class="article center">
@@ -93,7 +97,7 @@
                     <div class="hover-text">4,4/5</div>
                 </figure>
                 <a href="https://youtu.be/Gn8QkmTtaTU?si=ZOvBYou3cI313Cv6" class="button" target="_blank">BANDE ANNONCE</a>
-                <a href="./fiche technique robot/fiche.html" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="./fiche technique robot/fiche.html" class="button" target="_blank">VOIR LA FICHE DU FILM</a>
             </article>
         </section>
 
@@ -101,7 +105,7 @@
 
 
         <div class="page entete-page bg-light-grey">
-            <h2 class="h2 upper">la france à l'honneur</h2>
+            <h2 class="h2 upper" id="film-fr-scroll">la france à l'honneur</h2>
             <hr class="bg-france limit-size">
         </div>
 
@@ -115,7 +119,7 @@
                     <div class="hover-text">4,5/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=u0YnbsyvGS0" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./france/fiche technique le comte/fiche.html" class="button">VOIR LA FICHE TECHNIQUE</a>
+                <a href="./france/fiche technique le comte/fiche.html" class="button" target="_blank">VOIR LA FICHE TECHNIQUE</a>
             </article>
 
             <article class="article center">
@@ -126,13 +130,13 @@
                     <div class="hover-text">4,3/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=evoYNCdZGOQ" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./france/fiche technique aznavour/fiche.html" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="./france/fiche technique aznavour/fiche.html" class="button" target="_blank">VOIR LA FICHE DU FILM</a>
             </article>
         </section>
 
 
         <div class="page entete-page bg-grey">
-            <h2 class="h2 upper">les séries du moment</h2>
+            <h2 class="h2 upper" id="series-scroll">les séries du moment</h2>
             <hr class="bg-purple limit-size">
         </div>
 
@@ -147,7 +151,7 @@
                     <div class="hover-text">4,7/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=CoWsuFdqeYE" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./séries/fiche technique bb/fiche.html" class="button">VOIR LA FICHE TECHNIQUE</a>
+                <a href="./séries/fiche technique bb/fiche.html" class="button" target="_blank">VOIR LA FICHE TECHNIQUE</a>
             </article>
 
             <article class="article center">
@@ -158,7 +162,7 @@
                     <div class="hover-text">4,4/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=hMk6L3UbMuM" class="button" target="_blank">VOIR LA BANDE ANNONCE</a>
-                <a href="./séries/fiche technique bcs/fiche.html" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="./séries/fiche technique bcs/fiche.html" class="button" target="_blank">VOIR LA FICHE DU FILM</a>
             </article>
 
             <article class="article center">
@@ -169,33 +173,54 @@
                     <div class="hover-text">4,6/5</div>
                 </figure>
                 <a href="https://www.youtube.com/watch?v=Ng1W_qu5aJM" class="button" target="_blank">BANDE ANNONCE</a>
-                <a href="./séries/fiche technique got/fiche.html" class="button">VOIR LA FICHE DU FILM</a>
+                <a href="./séries/fiche technique got/fiche.html" class="button" target="_blank">VOIR LA FICHE DU FILM</a>
             </article>
         </section>
 
 
 
-        <div class="page entete-page bg-light-grey">
-            <h2 class="h2 upper">suivis</h2>
-            <hr class="bg-purple limit-size">
-        </div>
+        <div class="news-section">
+            <h2 class="news-title julius" id="suivis-scroll">Dernières Nouvelles et Articles</h2>
+            <hr class="news-divider">
+            <div class="news-container">
+                <article class="news-article">
+                    <h3 class="article-title">"Les Chroniques de Narnia" : Un Reboot en Préparation</h3>
+                    <p class="article-snippet">Les studios de cinéma annoncent un reboot de la célèbre saga "Les Chroniques de Narnia". Ce projet ambitieux vise à redonner vie à l'univers magique de C.S. Lewis avec une nouvelle approche et des technologies de pointe. Le casting est en cours et la production débutera l'année prochaine.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
+                <article class="news-article">
+                    <h3 class="article-title">Le Dernier Chef-d'œuvre de Steven Spielberg en Tournage</h3>
+                    <p class="article-snippet">Steven Spielberg est de retour derrière la caméra pour son dernier projet, un film dramatique épique se déroulant pendant la Seconde Guerre mondiale. Les premières images du tournage laissent entrevoir un film grandiose avec une attention particulière aux détails historiques.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
+                <article class="news-article">
+                    <h3 class="article-title">"Ma famille d'abord" de retour ?</h3>
+                    <p class="article-snippet">Après une absence de 15 ans, la série culte "Ma Famille d'Abord" fait son grand retour sur nos écrans. Les fans de la famille Kyle peuvent se réjouir, car une nouvelle saison est en préparation, avec des épisodes inédits et des situations encore plus hilarantes. Damon Wayans et Tisha Campbell-Martin reprennent leurs rôles emblématiques de Michael et Jay Kyle, promettant de nouvelles aventures familiales. La diffusion est prévue pour le printemps prochain.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
 
-        <div class="slider">
-            <div class="arrow-left"></div>
-            <div class="slides">
-                <div class="slide"><img src="./asset/img/deadpool 3/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg" alt="1"></div>
-                <div class="slide"><img src="./asset/img/séries/breaking bad/breaking-bad.jpg" alt="2"></div>
-                <div class="slide"><img src="./asset/img/jsp/51tjFmNBV+L.jpg" alt="3"></div>
-                <div class="slide"><img src="./asset/img/séries/better call saul/better-call-saul.jpg" alt="4"></div>
-                <div class="slide"><img src="./asset/img/gladiator2/affiche-officielle-film-gladiator-2.jpg" alt="5"></div>
+                <article class="news-article">
+                    <h3 class="article-title">Spider-Man 4 : Sam Raimi de Retour aux Commandes</h3>
+                    <p class="article-snippet">Après des années d'attente et de spéculations, les fans de Spider-Man peuvent enfin se réjouir. Sam Raimi, le réalisateur emblématique des trois premiers films de la franchise Spider-Man, est officiellement de retour pour diriger le très attendu Spider-Man 4.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
+                <article class="news-article">
+                    <h3 class="article-title">Breaking Bad : L'Étrange Théorie Selon laquelle Tout N'était Qu'un Mauvais Rêve de Hal</h3>
+                    <p class="article-snippet">Après des années d'analyses et de théories, une nouvelle rumeur fait surface concernant Breaking Bad. Et si toute l'histoire de Walter White n'était qu'un mauvais rêve de Hal, le père maladroit de la série Malcolm ? Cette théorie surprenante, popularisée sur les réseaux sociaux, suggère que les événements de Breaking Bad sont une illusion vécue par Hal dans un de ses moments de folie. Bien que non confirmée, cette hypothèse fait déjà débat parmi les fans et secoue les bases de l'univers télévisuel.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
+                <article class="news-article">
+                    <h3 class="article-title">John Wick 5 : Le Cinqième Chapitre En Préparation, Keanu Reeves en tête d'affiche</h3>
+                    <p class="article-snippet">Alors que les fans se remettent à peine des événements de John Wick 4, une annonce choc secoue Hollywood : John Wick 5 est en préparation. Après un dernier épisode plein de rebondissements, Keanu Reeves reprendra son rôle légendaire dans ce cinquième film, promettant une action encore plus intense et des révélations inattendues. La production devrait commencer prochainement, et les premières rumeurs suggèrent de nouvelles alliances pour le tueur légendaire.</p>
+                    <a href="./article.html" class="read-more" target="_blank">Lire la suite</a>
+                </article>
             </div>
-            <div class="arrow-right"></div>
         </div>
 
         <section>
 
             <div class="page entete-page bg-grey">
-                <h2 class="h2 upper">connexion</h2>
+                <h2 class="h2 upper"  id="connexion-array">connexion</h2>
                 <hr class="bg-purple limit-size">
             </div>
 
@@ -221,7 +246,7 @@
         <section class="container-flex bg-grey">
 
             <div class="page entete-page bg-light-grey">
-                <h2 class="h2 upper">contact</h2>
+                <h2 class="h2 upper" id="contact-array">contact</h2>
                 <hr class="bg-purple limit-size">
                 <p class="upper p2 center">suivez-nous sur les réseaux</p>
                 <div class="reseaux">
@@ -259,7 +284,7 @@
     </main>
 
     <footer>
-
+        <div class="footer capitalize white julius">© copyright - filmorama - 2024</div>
     </footer>
     
     <script src="./asset/js/main.js">
