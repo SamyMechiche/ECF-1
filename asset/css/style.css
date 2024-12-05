@@ -97,6 +97,8 @@ header {
 
 .navbar > ul > li > a {
     display: block;
+    width: 200px;
+    text-align: center;
     height: 60px;
     line-height: 60px;
 }
@@ -197,6 +199,8 @@ header {
 }
 
 .container {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
