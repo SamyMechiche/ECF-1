@@ -1,3 +1,5 @@
+/*-------------MENU BURGER-----------------*/
+
 const burgerMenuButton = document.querySelector('.burger-menu-button');
 const burgerMenuIcon = document.querySelector('.burger-menu-button i');
 const burgerMenu = document.querySelector('.burger-menu');
@@ -43,6 +45,18 @@ document.getElementById('desk-series').addEventListener('click', function(event)
     event.preventDefault();  
     document.getElementById('series-scroll').scrollIntoView({ behavior: 'smooth' });
 });
+
+/*--------------NEWS-------------*/
+
+document.getElementById('suivis').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('suivis-scroll').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('desk-suivis').addEventListener('click', function(event) {
+    event.preventDefault();  
+    document.getElementById('suivis-scroll').scrollIntoView({ behavior: 'smooth' });
+});
+
 
 
 /*-------------CONNEXION--------------------*/
