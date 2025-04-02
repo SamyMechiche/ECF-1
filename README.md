@@ -16,7 +16,7 @@
 
 1. **Cloner le projet :**
    ```bash
-   git clone https://github.com/ton-repo/filmorama.git
+   git clone https://github.com/SamyMechiche/filmorama.git
    cd filmorama
    ```
 2. **Lancer le projet :**
