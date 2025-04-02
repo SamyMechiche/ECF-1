@@ -16,8 +16,8 @@
 
 1. **Cloner le projet :**
    ```bash
-   git clone https://github.com/SamyMechiche/filmorama.git
-   cd filmorama
+   git clone https://github.com/SamyMechiche/ECF-1
+   cd ECF-1
    ```
 2. **Lancer le projet :**
    - Ouvrir l'index dans son navigateur
